@@ -119,7 +119,7 @@ public class QuizActivity extends AppCompatActivity {
                     });
                     if (curWordNum == quizWords.size() - 1) {
                         submitButton.setEnabled(false);
-                        resultText.setText("Result: " +  ((float) (rightCount)/quizWords.size()*100) + "%");
+                        resultText.setText("Result: " +  (int)((float) (rightCount)/quizWords.size()*100) + "%");
                         return;
                     }
                     curWordNum++;
